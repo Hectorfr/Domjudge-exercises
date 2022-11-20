@@ -18,13 +18,13 @@ public class ex32 {
            S = s.next();
     
                 switch (W){
-                        case "square":
-                            for (int i = 0 ; i < N ; i++) {
-                                for (int p = 0 ; p < (N*2) ; p++) {
-                                    System.out.printf(S);
-                                }
-                                System.out.printf("\n");
+                    case "square":
+                        for (int i = 0 ; i < N ; i++) {
+                            for (int p = 0 ; p < (N*2) ; p++) {
+                                System.out.printf(S);
                             }
+                            System.out.printf("\n");
+                        }
                         break;
                     
                     case "triangle":
