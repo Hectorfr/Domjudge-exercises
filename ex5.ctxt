@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=ex5
+comment1.params=input
+comment1.target=int\ countWordsUsingSplit(java.lang.String)
+comment2.params=args
+comment2.target=void\ main(java.lang.String[])
+numComments=3
