@@ -33,9 +33,9 @@ public class ex38 {
                 break;
             }
         }
-        System.out.printf("%7d May the Force be with you!", jedi);
-        System.out.printf("%7d Fear is the path to the dark side. Fear leads to anger. Anger leads to hate. Hate leads to suffering. Suffering leads to the dark side.", border);
-        System.out.printf("%7d Good! Your hate has made you powerful. Now, fulfill your destiny and take your father's place at my side!", darkSide);
+        System.out.printf("%7d May the Force be with you!\n", jedi);
+        System.out.printf("%7d Fear is the path to the dark side. Fear leads to anger. Anger leads to hate. Hate leads to suffering. Suffering leads to the dark side.\n", border);
+        System.out.printf("%7d Good! Your hate has made you powerful. Now, fulfill your destiny and take your father's place at my side!\n", darkSide);
 
     }
 }
