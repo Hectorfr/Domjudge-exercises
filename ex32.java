@@ -122,15 +122,15 @@ public class ex32 {
                         break;
 
                     case "trapecious":
-                        for (int i = 1 ; i < N+1 ; i++) {
+                        for (int i = 0 ; i < N ; i++) {
                             //spaces = N+2+(i-1);
                             //spaces = 2*N+i-2;
                             //spaces = (int)Math.pow(2, i);
-                            spaces = 2*N+1-(N-i);
+                            spaces = (N*2+(N-2))-(N-(i+1));
                             out = "";
-                            for (int p = 0; p < 2*i+1; p++) {
+                            for (int p = 0; p < N+2*i; p++) {
                                 out += S;
-                                if  (p == 2*i) System.out.printf("%" + spaces +"s",out);
+                                if  (p == (N+2*i)-1) System.out.printf("%" + spaces +"s",out);
                             }
                             System.out.printf("\n");
                         }
