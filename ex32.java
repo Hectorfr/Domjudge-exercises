@@ -119,7 +119,7 @@ public class ex32 {
 
                     case "trapecious":
                         for (int i = 1 ; i < N+1 ; i++) {
-                            spaces = 2*N+i-2;
+                            spaces = 2*N+1-(N-i);
                             out = "";
                             for (int p = 0; p < 2*i+1; p++) {
                                 out += S;
