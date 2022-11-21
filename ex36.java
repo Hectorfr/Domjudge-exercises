@@ -1,4 +1,4 @@
-
+package DomJudge.Domjudge;
 import java.util.*;
 
 
@@ -23,14 +23,16 @@ public class ex36 {
                 if (N % i == 0){b = true;}
                 i++;
             }
+            if (N == 1 || N == 0){b=true;}
             if (b == false) count++;
+        
         }
         if (count==0){
             System.out.print("No prime numbers were found!\n");
         }else if (count==1){
             System.out.print("Only one prime number was found!\n");
         }else{
-            System.out.printf("%l prime numbers were found!\n", count);
+            System.out.printf("%d prime numbers were found!\n", count);
         }
    }
 }
