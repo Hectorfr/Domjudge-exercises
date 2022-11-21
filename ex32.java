@@ -5,18 +5,23 @@ import java.util.*;
 
 public class ex32 {
        public static void main(String [] args){
-           Scanner s = new Scanner(System.in).useLocale(Locale.US); 
+            Scanner s = new Scanner(System.in).useLocale(Locale.US); 
            
-           String W, S, out = "";
-           int N, spaces = 0;
-           double parameter2 = 0, middle;
-           while (s.hasNext()){
+            String W, S, out = "";
+            int N,count=0, spaces = 0;
+            double parameter2 = 0, middle;
+           
+            while (s.hasNext()){
 
-           
-           W = s.next();
-           N = Integer.parseInt(s.next());
-           S = s.next();
-    
+            W = s.next();
+            N = Integer.parseInt(s.next());
+            S = s.next();
+        
+                if (count != 0){ System.out.printf("\n");}
+                count++;
+
+            
+
                 switch (W){
                     case "square":
                         for (int i = 0 ; i < N ; i++) {
@@ -75,18 +80,17 @@ public class ex32 {
                     case "right-arrow":
                         middle = (2*N -1)/2.0;
                         for (int i = 0 ; i < (2*N -1); i++) {
-                            spaces = 2*N-1;
                             out = "";
                             if (i <= middle){
                                 for (int p = 0; p < 2*i+1; p++) {
                                     out += S;
-                                    if  (p == 2*i) System.out.printf("%-" + spaces +"s",out);
+                                    if  (p == 2*i) System.out.printf("%s",out);
                                 }
                             }else if (i > middle){
                                 parameter2 = (middle + (middle-1) - ((i - middle)*2.0));
                                 for (int p = 0; p < parameter2; p++) {
                                     out += S;
-                                    if  (p == parameter2-1) System.out.printf("%-" + spaces +"s",out);
+                                    if  (p == parameter2-1) System.out.printf("%s",out);
                                 }
                             }
                             System.out.printf("\n");
@@ -119,6 +123,9 @@ public class ex32 {
 
                     case "trapecious":
                         for (int i = 1 ; i < N+1 ; i++) {
+                            //spaces = N+2+(i-1);
+                            //spaces = 2*N+i-2;
+                            //spaces = (int)Math.pow(2, i);
                             spaces = 2*N+1-(N-i);
                             out = "";
                             for (int p = 0; p < 2*i+1; p++) {
@@ -132,8 +139,6 @@ public class ex32 {
                     default: 
                         System.out.printf("Wrong selection!");
                 }
-                System.out.printf("\n");
             }
         }
 }
-
